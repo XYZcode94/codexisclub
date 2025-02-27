@@ -13,12 +13,12 @@
 </head>
 
 <body>
+    <div id="progress-bar"></div>
     <header>
         <div class="container">
             <div class="logo">
                 <img src="logo.png" alt="CODEXIS Logo">
             </div>
-            <h1>CODEXIS</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -81,19 +81,19 @@
             <div class="about-image">
                 <div class="image-container">
                     <img src="source_image005.jpg" alt="CodeXis Team">
-                    <div class="overlay">CodeXis Team</div>
+                    <div class="overlay"><a href="#team">CodeXis Team</a></div>
                 </div>
                 <div class="image-container">
                     <img src="source_image005.jpg" alt="Coding Session">
-                    <div class="overlay">Coding Session</div>
+                    <div class="overlay"><a href="">Coding Session</a></div>
                 </div>
                 <div class="image-container">
                     <img src="source_image005.jpg" alt="Innovation Workshop">
-                    <div class="overlay">Innovation Workshop</div>
+                    <div class="overlay"><a href="">Innovation Workshop</a></div>
                 </div>
                 <div class="image-container">
                     <img src="source_image005.jpg" alt="Tech Talk Event">
-                    <div class="overlay">Tech Talk Event</div>
+                    <div class="overlay"><a href="">ech Talk Event</a>T</div>
                 </div>
             </div>
         </div> <!-- Fixed: Added closing div tag for container -->
@@ -104,27 +104,27 @@
             <h2>Our Goal</h2>
             <div class="goalcontainer">
                 <img src="code_lang.jpg" alt="Programming Languages">
-                <p class="special-text">"Empowering Innovators, Building the Future"<br> Empower Future Coders – Provide
+                <p class="special-text">"Empowering Innovators, Building the Future" Empower Future Coders – Provide
                     students with the
-                    knowledge and skills to excel in programming and software development. <br>
+                    knowledge and skills to excel in programming and software development. 
                     Innovate & Create – Encourage creative problem-solving and the development of unique projects that
-                    have real-world applications.<br>
+                    have real-world applications.
                     Collaborate & Network – Build a community where students can collaborate, share ideas, and connect
-                    with industry professionals.<br>
+                    with industry professionals.
                     Enhance Technical Skills – Organize coding challenges, hackathons, and workshops to strengthen
-                    problem-solving abilities.<br>
+                    problem-solving abilities.
                     Encourage Open-Source Contributions – Promote participation in open-source projects to enhance
-                    learning and professional growth.<br>
+                    learning and professional growth.
                     Bridge the Gap Between Theory & Practice – Provide hands-on experience with real-world projects and
-                    industry-level coding practices.<br>
+                    industry-level coding practices.
                     Stay Updated with Tech Trends – Keep members informed about the latest advancements in AI, Web
-                    Development, Cybersecurity, and more.<br>
+                    Development, Cybersecurity, and more.
                     Prepare for Competitive Coding – Train students for coding competitions like CodeChef, LeetCode, and
-                    Google Kickstart.<br>
+                    Google Kickstart.
                     Develop Leadership & Teamwork – Offer leadership roles and opportunities to organize tech events and
-                    mentor peers.<br>
+                    mentor peers.
                     Foster an Inclusive Coding Culture – Ensure that everyone, regardless of background, feels welcomed
-                    and motivated to learn.</p>
+                    and motivated to learn.
             </div>
             <div class="goalcontainer" id="goalcontainer_mid">
                 <img src="ideas.jpg" alt="Innovation Ideas">
@@ -171,42 +171,42 @@
     </section>
 
     <section id="events" class="section">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <p>Stay tuned for hackathons, coding challenges, and workshops designed to enhance your skills and give you
-                real-world coding experience.</p>
-        </div>
-        <div class="event">
-            <img src="source_image03.jpg" alt="Hackathon Event">
-            <h2>🚀 Hackathon 2025 – CodeXtreme</h2>
-            <p><strong>📅 Date:</strong> March 15, 2025</p>
-            <p><strong>📍 Location:</strong> College Auditorium</p>
-            <p>A 24-hour coding marathon where participants will build innovative solutions to real-world problems.
-                Exciting prizes await the winners!</p>
-        </div>
+        <h2>Upcoming Events</h2>
+        <p style="font-size: 20px;">Stay tuned for hackathons, coding challenges, and workshops designed to enhance your skills and give you
+            real-world coding experience.</p>
+        <div class="container" id="event-tab">
+            <div class="event" id="hackthon_div">
+                <img src="source_image03.jpg" alt="Hackathon Event">
+                <h2>🚀 Hackathon 2025 – CodeXtreme</h2>
+                <p><strong>📅 Date:</strong> March 15, 2025</p>
+                <p><strong>📍 Location:</strong> College Auditorium</p>
+                <p>A 24-hour coding marathon where participants will build innovative solutions to real-world problems.
+                    Exciting prizes await the winners!</p>
+            </div>
 
-        <div class="event">
-            <img src="source_image02.jpg" alt="AI Workshop">
-            <h2>🤖 AI & Machine Learning Workshop</h2>
-            <p><strong>📅 Date:</strong> April 10, 2025</p>
-            <p><strong>📍 Location:</strong> Lab 101, Computer Science Block</p>
-            <p>Learn about Python, TensorFlow, and real-world AI applications with hands-on training.</p>
-        </div>
+            <div class="event" id="Ai_Ml_inovaction">
+                <img src="source_image02.jpg" alt="AI Workshop">
+                <h2>🤖 AI & Machine Learning Workshop</h2>
+                <p><strong>📅 Date:</strong> April 10, 2025</p>
+                <p><strong>📍 Location:</strong> Lab 101, Computer Science Block</p>
+                <p>Learn about Python, TensorFlow, and real-world AI applications with hands-on training.</p>
+            </div>
 
-        <div class="event">
-            <img src="source_image004.jpg" alt="Web Development Bootcamp">
-            <h2>🌐 Web Development Bootcamp</h2>
-            <p><strong>📅 Date:</strong> April 25, 2025</p>
-            <p><strong>📍 Location:</strong> Online (Zoom)</p>
-            <p>Learn full-stack development, React, APIs, and build your portfolio projects.</p>
-        </div>
+            <div class="event" id="Web_Dev">
+                <img src="source_image004.jpg" alt="Web Development Bootcamp">
+                <h2>🌐 Web Development Bootcamp</h2>
+                <p><strong>📅 Date:</strong> April 25, 2025</p>
+                <p><strong>📍 Location:</strong> Online (Zoom)</p>
+                <p>Learn full-stack development, React, APIs, and build your portfolio projects.</p>
+            </div>
 
-        <div class="event">
-            <img src="source_image005.jpg" alt="Cybersecurity Event">
-            <h2>🔒 Cybersecurity Awareness Week</h2>
-            <p><strong>📅 Date:</strong> May 5-10, 2025</p>
-            <p><strong>📍 Location:</strong> Various Sessions (Details TBA)</p>
-            <p>Topics include ethical hacking, penetration testing, and securing online data.</p>
+            <div class="event" id="Cybersecurity">
+                <img src="source_image005.jpg" alt="Cybersecurity Event">
+                <h2>🔒 Cybersecurity Awareness Week</h2>
+                <p><strong>📅 Date:</strong> May 5-10, 2025</p>
+                <p><strong>📍 Location:</strong> Various Sessions (Details TBA)</p>
+                <p>Topics include ethical hacking, penetration testing, and securing online data.</p>
+            </div>
         </div>
     </section>
 
@@ -252,11 +252,14 @@
             <h2>Contact Us</h2>
             <p style="font-size: 20px;">Want to join or have questions? Reach out to us!</p>
             <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
+                <p id="form-status" style="display: none;"></p> <!-- For displaying form submission status -->
             </form>
+
+
         </div>
     </section>
 
