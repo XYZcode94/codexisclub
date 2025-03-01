@@ -67,7 +67,7 @@ header {
     padding: 15px 0;
     border-bottom: 2px solid #e1e1e1;
     position: sticky;
-    z-index: 1;
+    z-index: 99;
     top: 0;
 }
 
@@ -104,9 +104,52 @@ nav ul li a:hover {
 }
 
 /* Hero Section */
+/* Hero Section with Video Background */
 #hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Video Background */
+#hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Dark Overlay for Readability */
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Darken video for better readability */
+    z-index: -1;
+}
+
+/* Hero Content */
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*#hero {
     padding: 50px 20px;
-    background: linear-gradient(to right, #f1f1f1, #ffffff), url('background02.jpg');
+    background: linear-gradient(to right, #f1f1f1, #ffffff), url('/3130284-uhd_3840_2160_30fps.mp4');
     background-attachment: fixed;
     transition: transform 0.3s ease-in-out;
     background-size: cover;
@@ -117,6 +160,8 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
 }
+*/
+
 
 #hero h2 {
     font-size: 2.5em;
@@ -423,7 +468,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    /*
     #hero {
         height: auto;
         padding: 100px 20px;
@@ -431,7 +476,7 @@ footer {
         background-size: cover;
         background-attachment: fixed;
         transition: transform 0.3s ease-in-out;
-    }
+    }*/
     
     .image-container img {
         width: 180px;
