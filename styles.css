@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins-Regular', Arial, sans-serif;
 }
 
 /* Font-face declarations */
@@ -27,11 +27,11 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0; /* Ensures it reaches the full width */
+    right: 0;
     width: 0%;
-    height: 5px; /* Increased thickness */
-    background-color: #FF0000; /* YouTube red */
-    z-index: 9999;
+    height: 5px;
+    background-color: #FF0000;
+    z-index: 1003;
     transition: width 0.1s linear;
 }
 
@@ -48,12 +48,6 @@ html {
     }
 }
 
-
-
-* {
-    font-family: 'Poppins-Regular', Arial, sans-serif;
-}
-
 /* Body Styling */
 body {
     background-color: #ffffff;
@@ -65,10 +59,10 @@ body {
 header {
     background: #f8f9fa;
     padding: 15px 0;
-    border-bottom: 2px solid #e1e1e1;
     position: sticky;
-    z-index: 99;
+    z-index: 1001;
     top: 0;
+    box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -146,23 +140,6 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-
-/*#hero {
-    padding: 50px 20px;
-    background: linear-gradient(to right, #f1f1f1, #ffffff), url('/3130284-uhd_3840_2160_30fps.mp4');
-    background-attachment: fixed;
-    transition: transform 0.3s ease-in-out;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    color: #333;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-*/
-
-
 #hero h2 {
     font-size: 2.5em;
     color: #fff;
@@ -210,7 +187,6 @@ nav ul li a:hover {
     color: #333;
     font-size: 2em;
 }
-
 
 /* Team Members */
 .team-members {
@@ -416,17 +392,16 @@ footer {
     border-top: 2px solid #e1e1e1;
 }
 
-/* Alert Styles */
+/* Single Alert Styles Definition */
 .alert {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 15px 20px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    border-radius: 4px;
     color: white;
-    font-weight: bold;
-    z-index: 1000;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: slideIn 0.3s ease-out;
 }
 
@@ -453,6 +428,19 @@ footer {
     background-color: #e74c3c;
 }
 
+/* Alert Types */
+.alert.info {
+    background-color: #2196F3;
+}
+
+.alert.success {
+    background-color: #4CAF50;
+}
+
+.alert.error {
+    background-color: #f44336;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     *{
@@ -468,15 +456,6 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-    /*
-    #hero {
-        height: auto;
-        padding: 100px 20px;
-        background: url(/background.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-        transition: transform 0.3s ease-in-out;
-    }*/
     
     .image-container img {
         width: 180px;
@@ -525,16 +504,6 @@ footer {
     
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Add this to your styles.css file */
 
 /* Email Popup Styles */
@@ -563,13 +532,11 @@ footer {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 /* Show popup when active */
 .email-popup.active {
     opacity: 1;
     visibility: visible;
 }
-
 
 .close-popup {
     position: absolute;
@@ -621,30 +588,6 @@ footer {
 
 #joinForm button:hover {
     background-color: #3e8e41;
-}
-
-/* Alert Styles (if not already defined) */
-.alert {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 15px 25px;
-    border-radius: 4px;
-    color: white;
-    z-index: 1001;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: slideIn 0.3s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }
 
 .alert.success {
